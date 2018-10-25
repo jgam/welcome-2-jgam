@@ -12,3 +12,11 @@ Selenium
 
 Also known as, headerless crawling tool. "Headless chrome is going to play an increasingly important role in the headless browser space(and headless Firefox as well, now that it's been released.)" said by intoli.com
 Also, they mentioned how headless browsers are particularly useful when dealing with JavaScript heavy sites.
+
+==> I personally find selenium as a somewhat script to "open" the browser and automate steps that we take in order to find the right search results. In the following code, I want to demonstrate the procedure of humans searching for a certain keyword, "kakao."
+
+First, we will open the browser(say the default is chrome)
+Second, we will write "kakao" in the search tab
+Lastly, we will click the "search tab" to see the results
+
+After these three procedures, things get complicated but we can get scraping information such as ranking of the websites and suggests keywords that relate to the original keyword. This tool can be used in anywhere for scraping as the means of automation!
