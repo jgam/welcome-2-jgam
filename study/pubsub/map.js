@@ -20,7 +20,7 @@ function init(){//함수는 Google Maps API를 사용하여 지도를 활성화�
   }
 }
 
-function addPlace(event){
+function addPlace(event){//지도를 클릭할때 리스트에 새로운 장소를 추가하고 마커랜더링을 실행합니다.
   myPlaces.push({
     position: event.latLng
   })
@@ -29,7 +29,7 @@ function addPlace(event){
   renderMarkers()
 }
 
-function renderMarkers(){
+function renderMarkers(){//배열 안에있는 장소들을 순회하여 지도를 정리한 다음에 그 위에 마커를 그립니다.
   googleMap.markerList.forEach(m => m.setMap(null))//모든 마커제거
   googleMap.markerList = []
   
