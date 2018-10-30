@@ -3,7 +3,7 @@
 let googleMap
 let myPlaces = []
 
-function init(){
+function init(){//함수는 Google Maps API를 사용하여 지도를 활성화하고, 지도에 클릭액션을 설정한 뒤 localStorage에 있는 마커들을 불러오려합니다.
   googleMap = new google.maps.Map(document.getElementById('map'), {
   center: {lat:0, lng:0},
   zoom: 3
@@ -44,4 +44,4 @@ function renderMarkers(){
   })
 }
 
-init()
+init()//Google Maps API를 사용하여 지도를 활성화하고, 지도에 클릭 액션을 설정한 뒤 localStorage에 있는 마커들을 불러오려 합니다.
