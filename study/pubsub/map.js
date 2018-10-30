@@ -30,6 +30,18 @@ function addPlace(event){
 }
 
 function renderMarkers(){
-  googleMap.markerList.forEach(m => m.setMap(null))//모든 
-
+  googleMap.markerList.forEach(m => m.setMap(null))//모든 마커제거
+  googleMap.markerList = []
+  
+  //myPlaces 배열의 요소를 기반으로 마커를 추가한다
+  myPlaces.forEach(places => {
+    const marker = new google.maps.Marker({
+      position: place.position,
+      map: googleMap
+    })
+    
+    googleMap.markerList.push(marker)
+  })
 }
+
+init()
