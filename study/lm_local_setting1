@@ -60,5 +60,6 @@ ImportError: C extension: umpy.core.multiarray failed to import not built. If yo
 3. scikitlearn from 0.19 => 0.20
 
 ** scikit-learn requires, python(>=3.4), Numpy(>= 1.8.2), SciPy(>=0.13.3)
-
+pyenv install 3.5.2
 The error seems to run in a cycle. So decided to install python version 3.5.2 instead.
+'zlib' is required and I need to install that in order to install python!
